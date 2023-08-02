@@ -1,0 +1,120 @@
+.card_list{
+    width: 100%;
+    padding: 35px 0;
+   
+}
+.card_list .card_flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+.card_item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.card_item .img_div {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(235, 235, 241,0.8);
+    
+    border-radius: 10px;
+
+}
+.img_div img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+
+}
+
+.love_icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:15px;
+    right: 15px;
+   cursor: pointer;
+}
+.love_icon i:hover{
+    color: #ea4636;
+}
+
+.text_flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.text_flex p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.card_p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.rate_flex i{
+    color: #28B029;
+    font-size: 14px;
+    padding: 1px;
+}
+.text_item a{
+    color: #003D2A;
+}
+.text_flex a:hover{
+    color: #ea4636;
+}
+.filter_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_box select{
+    padding: 8px 10px;
+    border-radius: 30px;
+   margin:0px 5px;
+   background-color: rgba(235, 235, 241,0.8);
+   border: none;
+   outline: none;
+}
+
+.btn-filter{
+    padding: 8px 15px;
+    border-radius: 30px;
+    background-color: rgba(235, 235, 241,0.8);
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.btn-filter:focus{
+    border: none;
+   outline: none;
+}
+
+
+
+@media (max-width:1000px) {
+
+    .filter_box div{
+        display: none;
+    }
+    .filter_box{
+        justify-content: flex-end;
+    }
+    
+}
