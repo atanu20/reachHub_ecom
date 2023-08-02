@@ -1,7 +1,7 @@
 // export const apilink = '';
 // export const apilink = '';
 
-export const path = 'http://localhost:4551';
+export const path = 'https://reachhub.netlify.app';
 
 export const prodDet=[
 
